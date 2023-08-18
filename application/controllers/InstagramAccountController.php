@@ -12,6 +12,17 @@ class InstagramAccountController extends CI_Controller
 		$this->menu = json_decode($this->MenuModel->load_menu(), 3);
 		$this->data['menu'] = $this->menu;
 	}
+	public function index(){
+        $this->data['page'] = [
+            'title' => 'All Instagram Accounts'
+        ];
+        $this->data['breadcrumb'] = [
+            "Home" => "",
+            "Accounts" => "pages",
+            "All Instagram Accounts" => "Current",
+        ];
+        $this->load->view('analytics/instagram/page/index', $this->data);
+    }
 	public function account($id)
 	{
 		$this->data['page'] = [

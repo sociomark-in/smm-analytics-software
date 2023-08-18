@@ -184,8 +184,10 @@ html {
 		}
 	}
 	.page-name{
-		h3,p{
-			margin: 0;
+		&:has(.link){
+			h3{
+				margin: 0;
+			}
 		}
 	}
 }
