@@ -77,7 +77,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <?php load_menu($menu['users'], $menu['users']['type'],$menu['users']['enable']) ?>
+                <?php load_menu($menu['pages'], $menu['pages']['type'],$menu['pages']['enable']) ?>
                 <?php load_menu($menu['categories'], $menu['categories']['type'],$menu['categories']['enable']) ?>
                 <?php load_menu($menu['products'], $menu['products']['type'],$menu['products']['enable']) ?>
                 <?php load_menu($menu['orders-invoices'], $menu['orders-invoices']['type'],$menu['orders-invoices']['enable']) ?>

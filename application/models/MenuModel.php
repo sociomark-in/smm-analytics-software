@@ -4,6 +4,25 @@ class MenuModel extends CI_Model
 {
     public function load_menu(){
         $menu = [
+            'pages' => [
+                'enable' => true,
+                'type' => 'dropdown',
+                'text' => 'Pages',
+                'dropdown' => [
+                    'facebook' => [
+                        'enable' => true,
+                        'type' => 'single',
+                        'text' => "Facebook",
+                        'url' => 'pages/facebook/all'
+                    ],
+                    'instagram' => [
+                        'enable' => true,
+                        'type' => 'single',
+                        'text' => "Instagram",
+                        'url' => 'accounts/instagram/all'
+                    ]
+                ]
+            ],
             'users' => [
                 'enable' => true,
                 'type' => 'dropdown',
