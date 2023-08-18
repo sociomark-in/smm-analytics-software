@@ -10,7 +10,7 @@
                 <?php if ($value == 'Current') : ?>
                     <div class="page-name">
                         <h3><?= $key ?></h3>
-                        <p class="text-muted">Dashboard</p>
+                        <a class="" href="url">#<?= $page['id'] ?></a>
                     </div>
                 <?php endif ?>
             <?php endforeach ?>

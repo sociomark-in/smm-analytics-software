@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="row m-0">
-                    <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="panel panel-brief panel-brief-facebook">
@@ -54,7 +54,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="panel panel-brief panel-brief-facebook">
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="panel panel-brief panel-brief-facebook">
@@ -102,7 +102,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-6">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
                         <div class="card mb-3">
                             <div class="card-body">
                                 <div class="panel panel-brief panel-brief-facebook">

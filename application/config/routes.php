@@ -52,3 +52,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'SiteController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['pages/all'] = 'PagesController';
+
+$route['pages/facebook/all'] = 'FacebookPageController';
+
+// pages/facebook/2378462387648234
+$route['pages/facebook/(:any)'] = 'FacebookPageController/page/$1';
+
+$route['accounts/instagram/all'] = 'InstagramAccountController';
+
+// accounts/instagram/237846234353454353
+$route['accounts/instagram/(:any)'] = 'InstagramAccountController/account/$1';
