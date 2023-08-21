@@ -58,7 +58,7 @@ $route['pages/all'] = 'PagesController';
 $route['pages/facebook/all'] = 'FacebookPageController';
 
 // pages/facebook/2378462387648234
-$route['pages/facebook/(:any)'] = 'FacebookPageController/page/$1';
+$route['page/facebook/(:any)'] = 'FacebookPageController/page/$1';
 
 $route['accounts/instagram/all'] = 'InstagramAccountController';
 

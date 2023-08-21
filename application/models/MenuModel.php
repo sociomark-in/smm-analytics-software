@@ -7,7 +7,7 @@ class MenuModel extends CI_Model
             'pages' => [
                 'enable' => true,
                 'type' => 'dropdown',
-                'text' => 'Pages',
+                'text' => 'All Channels',
                 'dropdown' => [
                     'facebook' => [
                         'enable' => true,
