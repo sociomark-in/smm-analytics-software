@@ -1,5 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+require_once './vendor/autoload.php';
+use \PhpOffice\PhpSpreadsheet\IOFactory;
 
 class SiteController extends CI_Controller {
 
@@ -32,5 +34,25 @@ class SiteController extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('pages/index', $this->data);
+	}
+
+	public function data()
+	{
+		$filename = FCPATH . "uploads/ayushakti-ayurved_visitors.xls";
+		$fileType = IOFactory::identify($filename);
+		$reader = IOFactory::createReader($fileType);
+		$spreadsheet = $reader->load($filename);
+		$sheet = $spreadsheet->getSheetByName('Seniority');
+		$count = 0;
+		$data['headers'] = [];
+		$data['data'] = [];
+		foreach ($sheet->getRowIterator(2) as $row) {
+			array_push($data['headers'],$sheet->getCell('A'.$row->getRowIndex())->getValue());
+		}
+		foreach ($sheet->getRowIterator(2) as $row) {
+			array_push($data['data'],$sheet->getCell('B'.$row->getRowIndex())->getValue());
+		}
+		echo "<pre>";
+		print_r($data);
 	}
 }
