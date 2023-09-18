@@ -56,11 +56,17 @@ $route['translate_uri_dashes'] = FALSE;
 $route['pages/all'] = 'PagesController';
 
 $route['pages/facebook/all'] = 'FacebookPageController';
-
-// pages/facebook/2378462387648234
+// page/facebook/2378462387648234
 $route['page/facebook/(:any)'] = 'FacebookPageController/page/$1';
 
 $route['accounts/instagram/all'] = 'InstagramAccountController';
-
-// accounts/instagram/237846234353454353
+// account/instagram/237846234353454353
 $route['accounts/instagram/(:any)'] = 'InstagramAccountController/account/$1';
+
+$route['pages/linkedin/all'] = 'LinkedinPageController';
+// page/linkedin/2378462387648234
+$route['page/linkedin/(:any)'] = 'LinkedinPageController/page/$1';
+
+
+// Data API Calls
+$route['api/data/excel/import/(:any)']['GET'] = 'DataImportController/excelData/$1';

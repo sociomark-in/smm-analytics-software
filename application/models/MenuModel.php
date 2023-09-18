@@ -20,6 +20,12 @@ class MenuModel extends CI_Model
                         'type' => 'single',
                         'text' => "Instagram",
                         'url' => 'accounts/instagram/all'
+                    ],
+                    'linkedin' => [
+                        'enable' => true,
+                        'type' => 'single',
+                        'text' => "LinkedIn",
+                        'url' => 'pages/linkedin/all'
                     ]
                 ]
             ],

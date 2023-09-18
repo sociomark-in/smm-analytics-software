@@ -18,7 +18,7 @@ class InstagramAccountController extends CI_Controller
         ];
         $this->data['breadcrumb'] = [
             "Home" => "",
-            "Accounts" => "pages",
+            "Accounts" => "accounts-and-pages",
             "All Instagram Accounts" => "Current",
         ];
         $this->load->view('analytics/instagram/page/index', $this->data);
@@ -30,7 +30,7 @@ class InstagramAccountController extends CI_Controller
         ];
         $this->data['breadcrumb'] = [
 			"Home" => "",
-			"Pages" => "pages",
+			"Pages" => "accounts-and-pages",
 			"All Instagram Pages" => "accounts/instagram/all",
 			"Instagram Page Name" => "Current",
 		];

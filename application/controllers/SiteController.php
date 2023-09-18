@@ -36,11 +36,4 @@ class SiteController extends CI_Controller {
 	{
 		$this->load->view('pages/index', $this->data);
 	}
-
-	public function data()
-	{
-		$data = $this->ExcelImport->importFromSheetName('Company size');
-		echo "<pre>";
-		print_r($data);
-	}
 }

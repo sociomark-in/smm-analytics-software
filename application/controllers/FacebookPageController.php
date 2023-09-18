@@ -19,7 +19,7 @@ class FacebookPageController extends CI_Controller
         ];
         $this->data['breadcrumb'] = [
             "Home" => "",
-            "Pages" => "pages",
+            "Pages" => "accounts-and-pages",
             "All Facebook Pages" => "Current",
         ];
         $this->load->view('analytics/facebook/page/index', $this->data);
@@ -33,7 +33,7 @@ class FacebookPageController extends CI_Controller
         ];
         $this->data['breadcrumb'] = [
             "Home" => "",
-            "Pages" => "pages",
+            "Pages" => "accounts-and-pages",
             "All Facebook Pages" => "pages/facebook/all",
             "Facebook Page" => "Current",
         ];
