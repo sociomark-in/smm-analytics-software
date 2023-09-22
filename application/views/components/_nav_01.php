@@ -32,43 +32,26 @@
                     </ul>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <?= $this->session->user['username'] ?>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link d-flex lh-1 with-avatar p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+                        <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000m.jpg)">PK</span>
+                        <div class="d-none d-xl-block ps-2">
+                            <div><?= $this->session->user['username'] ?></div>
+                            <div class="mt-1 small text-secondary"><?= $this->session->user['role'] ?></div>
+                        </div>
                     </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <div class="px-3">
-                                <?= $this->session->user['username'] ?>
-                            </div>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">My Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Messages</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li>
-                            <a class="dropdown-item text-danger d-flex justify-content-between" href="<?= base_url('logout') ?>">
-                                Logout
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out">
-                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                                    <polyline points="16 17 21 12 16 7"></polyline>
-                                    <line x1="21" y1="12" x2="9" y2="12"></line>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><?= $this->session->user['username'] ?></a>
-                </li>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                        <a href="#" class="dropdown-item">Status</a>
+                        <a href="./profile.html" class="dropdown-item">Profile</a>
+                        <a href="#" class="dropdown-item">Feedback</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="./settings.html" class="dropdown-item">Settings</a>
+                        <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 </nav>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
@@ -77,12 +60,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <?php load_menu($menu['pages'], $menu['pages']['type'],$menu['pages']['enable']) ?>
-                <?php load_menu($menu['categories'], $menu['categories']['type'],$menu['categories']['enable']) ?>
-                <?php load_menu($menu['products'], $menu['products']['type'],$menu['products']['enable']) ?>
-                <?php load_menu($menu['orders-invoices'], $menu['orders-invoices']['type'],$menu['orders-invoices']['enable']) ?>
-                <?php load_menu($menu['reviews'], $menu['reviews']['type'],$menu['reviews']['enable']) ?>
-                <?php load_menu($menu['brands'], $menu['brands']['type'],$menu['brands']['enable']) ?>
+                <?php load_menu($menu['pages'], $menu['pages']['type'], $menu['pages']['enable']) ?>
+                <?php load_menu($menu['categories'], $menu['categories']['type'], $menu['categories']['enable']) ?>
+                <?php load_menu($menu['products'], $menu['products']['type'], $menu['products']['enable']) ?>
+                <?php load_menu($menu['orders-invoices'], $menu['orders-invoices']['type'], $menu['orders-invoices']['enable']) ?>
+                <?php load_menu($menu['reviews'], $menu['reviews']['type'], $menu['reviews']['enable']) ?>
+                <?php load_menu($menu['brands'], $menu['brands']['type'], $menu['brands']['enable']) ?>
             </ul>
         </div>
     </div>

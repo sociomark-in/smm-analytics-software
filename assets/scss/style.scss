@@ -7,7 +7,7 @@ $gray: lighten(grey, 15);
 $red: #e74a3b;
 $white: #ffff;
 $black: #2a2a2a;
-
+$light: darken(white, 10);
 $facebook: #1877f2;
 $instagram: #e1306c;
 $youtube: #ff0000;
@@ -35,6 +35,73 @@ a {
 
 html {
 	font-size: 15px;
+}
+
+// Navbar
+nav.navbar {
+	.navbar {
+		padding: 0;
+	}
+	border-bottom: 1px solid $light;
+	.navbar-nav {
+		.dropdown-menu {
+			margin-top: 0.5rem;
+			box-shadow: rgba($light, 0.04) 0 2px 4px 0;
+			&.dropdown-menu-arrow {
+				position: absolute;
+				left: -2rem;
+				&::before {
+					content: "";
+					position: absolute;
+					top: -0.3rem;
+					left: 2.5rem;
+					display: block;
+					background: inherit;
+					width: 14px;
+					height: 14px;
+					transform: rotate(45deg);
+					transform-origin: center;
+					border: 1px solid;
+					border-color: inherit;
+					z-index: -1;
+					clip: rect(0, 9px, 9px, 0);
+				}
+			}
+		}
+	}
+}
+.nav-link {
+	&.with-avatar {
+		text-transform: capitalize;
+	}
+}
+@media screen and (min-width: 512px) {
+	.dropdown-menu-columns {
+		display: flex;
+		flex: 0 0.25rem;
+		.dropdown-menu-column {
+			min-width: 11rem;
+		}
+	}
+	.dropdown-menu-arrow {
+		left: 1rem;
+	}
+}
+
+// Avatar
+span.avatar {
+	display: grid;
+	width: 2.5rem;
+	aspect-ratio: 1;
+	place-items: center;
+	background-color: darken($white, $amount: 5);
+	border: 1px solid $light;
+	color: darken($light, $amount: 45);
+	font-weight: 600;
+	border-radius: 0.2rem;
+	&.avatar-sm {
+		width: 2rem;
+	}
 }
 
 .alert {
@@ -183,9 +250,9 @@ html {
 			font-size: 1.5rem;
 		}
 	}
-	.page-name{
-		&:has(.link){
-			h3{
+	.page-name {
+		&:has(.link) {
+			h3 {
 				margin: 0;
 			}
 		}

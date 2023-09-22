@@ -133,7 +133,7 @@
                     <div class="col-12 mb-3">
                         <div class="card panel">
                             <div class="card-header">
-                                Total Visitor Activity Heatmap
+                                Activity Heatmap
                             </div>
                             <div class="card-body">
                                 <div class="row g-0 justify-content-center">
