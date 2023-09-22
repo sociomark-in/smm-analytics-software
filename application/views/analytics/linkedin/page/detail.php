@@ -161,6 +161,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-3"></div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-3">
+                        <div class="card panel h-100">
+                            <div class="card-header">
+                                Scheduled Events (All Accounts & Pages)
+                            </div>
+                            <div class="card-body">
+                                <?php $this->load->view('components/charts/calendar/dayView') ?>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

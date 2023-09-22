@@ -178,6 +178,33 @@ span.avatar {
 	}
 }
 
+.widget__calendar{
+	.fc-header-toolbar .fc-toolbar-chunk{
+		h2{
+			font-size: 1.3rem;
+		}
+	}
+	.fc-daygrid-day-events{
+		.fc-daygrid-event-harness{
+			.fc-event{
+				padding: 0.25rem 0.5rem;
+				font-size: 1.1rem;
+				background-color: $blue;
+				&:hover{
+					background-color: darken($color: $blue, $amount: 10);
+					cursor: pointer;
+				}
+				&.fc-event-start{}
+				&.fc-event-end{}
+				&.fc-event-today{}
+				&.fc-daygrid-event{}
+				&.fc-daygrid-block-event{}
+				&.fc-h-event{}
+			 } 
+		}
+	}
+}
+
 .panel {
 	border-radius: 0;
 	.panel-header {
