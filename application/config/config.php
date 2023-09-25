@@ -24,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost:8000/socio-scope/';
+$config['base_url'] = 'https://test.apogeedigitech.in/repositories/socio-scope/';
 
 /*
 |--------------------------------------------------------------------------
