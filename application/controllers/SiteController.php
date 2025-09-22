@@ -34,6 +34,6 @@ class SiteController extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('pages/index', $this->data);
+		$this->load->view('pages/index_sidebar', $this->data);
 	}
 }

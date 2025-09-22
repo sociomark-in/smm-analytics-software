@@ -53,6 +53,18 @@ $route['default_controller'] = 'SiteController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+/**
+ * ==================================
+ *  Authentication & Authorization
+ * ==================================
+ * - General Routes
+ * - API Calls
+ *   
+ */ 
+$route['login'] = 'AuthController/login';
+$route['api/sign-in']['POST'] = 'AuthController/sign_in';
+
+
 $route['pages/all'] = 'PagesController';
 
 $route['pages/facebook/all'] = 'FacebookPageController';

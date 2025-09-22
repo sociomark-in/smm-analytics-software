@@ -178,6 +178,13 @@ span.avatar {
 	}
 }
 
+.page__fullh_middle{
+	min-height: 100vh;
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+
 .widget__calendar{
 	.fc-header-toolbar .fc-toolbar-chunk{
 		h2{
